@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cali</title>
+    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="cali.css">
+</head>
+
+<body>
+
+    <div class="modal-container">
+        <div class="overlay"></div>
+        <div class="modal">
+            <div id="menu-close" class="close">X</div>
+            Modal
+        </div>
+    </div>
+
+
+    <div class="body">
+
+        <div class="header">
+            <div class="one">
+                <div class="">FREE 🚛 SHIPPING FOR ORDERS> $350</div>
+                <div class="about"> About Blog FAQ <i class="fa-brands fa-facebook-f"></i> <i
+                        class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i
+                        class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="logo">
+                    <i class="fa-solid fa-cannabis"></i>
+                    CALI <br>Dispensary
+                </div>
+
+                <form class="middle flex items-center">
+                    <div class="all flex">all ></div>
+
+                    <div class="searchBar flex items-center">
+                        <input type="search" placeholder="Search">
+                        <div class="fa fa-search"></div>
+                    </div>
+                </form>
+
+                <div class="right right2 flex">
+                    <div class="ring ring-bg">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <div>
+                        <i id="menu-open" class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="right right1 flex">
+                    <div class="ring">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <button type="button">
+                        <span>Cart/$0.00</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="three">
+                <div>Store</div>
+                <div>Psychedelics</div>
+                <div>Weed(Kush)</div>
+                <div>Pills</div>
+                <div> ABout</div>
+                <div> Reviews</div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="cali.js" type="text/script"></script> -->
+    <script>
+        var container = document.querySelector(".modal-container")
+        var openMenu = document.getElementById("menu-open")
+        var closeMenu = document.getElementById("menu-close")
+        var overlay = document.querySelector(".overlay")
+
+        openMenu.addEventListener("click", function () {
+            container.style.display = 'block'
+        })
+
+        closeMenu.addEventListener("click", function () {
+            container.style.display = 'none'
+        })
+        overlay.addEventListener("click", function () {
+            container.style.display = 'none'
+        })
+    </script>
+</body>
+
+</html>

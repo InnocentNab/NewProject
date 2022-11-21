@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: space-between;
+            background-color: azure;
+        }
+
+        .minus {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            background-color: aqua;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .plus {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            background-color: aqua;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="minus">_</div>
+        <div class="circle">8</div>
+        <div class="plus">+</div>
+    </div>
+
+
+
+    <script>
+        var minus = document.getElementsByClassName("minus")[0]
+        var circle = document.getElementsByClassName("circle")[0]
+        var plus = document.getElementsByClassName("plus")[0]
+
+        minus.addEventListener("click", function () {
+            if (circle.textContent > 5) {
+                circle.textContent = circle.textContent - 1
+            }
+            return;
+        })
+
+        plus.addEventListener("click", function () {
+            circle.textContent = parseInt(circle.textContent) + 1
+            return;
+        })
+    </script>
+</body>
+
+</html>
